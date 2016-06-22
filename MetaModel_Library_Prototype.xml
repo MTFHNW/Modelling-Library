@@ -26,7 +26,7 @@
 <value></value>
 </facet>
 </facets>
-<value>22.06.2016, 11:34</value>
+<value>22.06.2016, 13:36</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="bp">
 <facets>
@@ -14588,6 +14588,27 @@
 </facets>
 <value>Yes</value>
 </attribute>
+<attribute name="Related Business Process Requirement" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <attribute name="Position" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -20245,7 +20266,7 @@
 <value></value>
 </facet>
 </facets>
-<value>C:\Users\LAMMEL~1\AppData\Local\Temp\adoadd9f5a6-137f-4bcc-895e-cec0e06c174d</value>
+<value>C:\Users\LAMMEL~1\AppData\Local\Temp\ado4fe9aabe-21a0-477c-93d3-e2be03e49207</value>
 </classattribute>
 <classattribute name="Model tree" type="enum">
 <facets>
@@ -42324,6 +42345,27 @@
 </facets>
 <value>Yes</value>
 </attribute>
+<attribute name="Related Business Process Requirement" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <classattribute name="Doku" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -42687,6 +42729,7 @@
 <attr val="Description" val-lines="5" />
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
+<attr val="Related Business Process Requirement" />
 <chapter val="Representation" />
 <group val="Swimlane" />
 <attr val="Color" modifier-dialog="color" opt-dialog="true" />
@@ -43392,6 +43435,27 @@
 </facets>
 <value>Yes</value>
 </attribute>
+<attribute name="Related Business Process Requirement" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <classattribute name="Doku" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -43756,6 +43820,7 @@
 <attr val="Description" val-lines="5" />
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
+<attr val="Related Business Process Requirement" />
 <chapter val="Representation" />
 <group val="Swimlane" />
 <attr val="Color" modifier-dialog="color" opt-dialog="true" />
@@ -55752,6 +55817,27 @@
 </facets>
 <value></value>
 </attribute>
+<attribute name="Referenced Workflow Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Service description model" val-c="Workflow Description" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <attribute name="Position" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -56529,7 +56615,6 @@
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
 <attr val="Id" opt-write-protected="true" />
-<attr val="Referenced Business Process Requirement" />
 <chapter val="Representation" />
 <attr val="Orientation" />
 <attr val="Rotate the visualised values by 90 degrees" modifier-ctrltype="check" opt-ctrltype="true" val-unchecked-value="No" val-checked-value="Yes" val-enabled="((sOrientation)=(&quot;horizontal&quot;))" />
@@ -57475,6 +57560,27 @@
 </facets>
 <value></value>
 </attribute>
+<attribute name="Referenced Workflow Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Service description model" val-c="Workflow Description" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -57623,7 +57729,6 @@
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
 <attr val="Id" opt-write-protected="true" />
-<attr val="Referenced Business Process Requirement" />
 <chapter val="Representation" />
 <attr val="Color" modifier-dialog="color" opt-dialog="true" />
 <attr val="Boundary visible" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="Yes" val-unchecked-value="No" />
@@ -58021,6 +58126,48 @@
 <objref val-mt="Working environment model" val-c="Organizational unit" />
 <objref val-mt="Working environment model" val-c="Role" />
 <objref val-mt="Working environment model" val-c="Performer" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Referenced Business Process Requirement" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Referenced Workflow Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Service description model" val-c="Workflow Description" val-max="1" />
 </leo>
 </value>
 </facet>
@@ -58491,7 +58638,8 @@
 </facet>
 </facets>
 <value>
-<leo><notebook />
+<leo><attr val="Referenced Workflow Description" />
+<notebook />
 <chapter val="Description" />
 <attr val="Name" />
 <attr val="Description" val-lines="5" />
@@ -75220,6 +75368,27 @@
 </facets>
 <value>Yes</value>
 </attribute>
+<attribute name="Related Business Process Requirement" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -75311,6 +75480,7 @@
 <attr val="Name" />
 <attr val="Description" />
 <attr val="Referenced process" />
+<attr val="Related Business Process Requirement" />
 <chapter val="Representation" />
 <attr val="Color" modifier-dialog="color" opt-dialog="true" />
 <chapter val="Semantic Enrichment" />
