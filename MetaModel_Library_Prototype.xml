@@ -26,7 +26,7 @@
 <value></value>
 </facet>
 </facets>
-<value>22.06.2016, 10:48</value>
+<value>22.06.2016, 11:34</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="bp">
 <facets>
@@ -196,14 +196,9 @@
 <mode val="All modelling objects" modifier-from="all" opt-from="true" />
 <mode val="Documentation" modifier-from="all" opt-from="true" opt-no-modeling="true" />
 <modeltype val="Service description model" />
-<incl val="Activity Specification" />
-<incl val="Note" />
-<mode val="Documentation" modifier-from="all" opt-from="true" opt-no-modeling="true" />
-<modeltype val="Business Process Requirements Model" />
-<incl val="Business Process Requirement" />
-<mode val="Documentation" modifier-from="all" opt-from="true" opt-no-modeling="true" />
-<modeltype val="Workflow Descriptions Model" />
 <incl val="Workflow Description" />
+<incl val="Business Process Requirement" />
+<incl val="Note" />
 <mode val="Documentation" modifier-from="all" opt-from="true" opt-no-modeling="true" />
 <modeltype val="Workflow diagram (BPMN 2.0)" modifier-from="none" opt-from="true" val-plural="Workflow diagrams (BPMN 2.0)" val-pos="2" val-bitmap="db:\wf_icon.png" val-attrrep="BPMN20 Model Attributes" val-graphrep="BPM Model Graphrep" />
 <incl val="Pool" />
@@ -20250,7 +20245,7 @@
 <value></value>
 </facet>
 </facets>
-<value>C:\Users\LAMMEL~1\AppData\Local\Temp\ado2cc4a91f-1837-4ac2-baa3-9afde540033e</value>
+<value>C:\Users\LAMMEL~1\AppData\Local\Temp\adoadd9f5a6-137f-4bcc-895e-cec0e06c174d</value>
 </classattribute>
 <classattribute name="Model tree" type="enum">
 <facets>
@@ -49128,27 +49123,6 @@
 </facets>
 <value></value>
 </attribute>
-<attribute name="Referenced Specification" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Activity Specification" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <attribute name="Position" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -50226,7 +50200,6 @@
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
 <attr val="Id" opt-write-protected="true" />
-<attr val="Referenced Specification" />
 <chapter val="Event type" />
 <attr val="Type" modifier-ctrltype="radio" opt-ctrltype="true" />
 <group val="Trigger" />
@@ -55758,7 +55731,7 @@
 </facets>
 <value>No</value>
 </attribute>
-<attribute name="Referenced Specification" type="interref">
+<attribute name="Referenced Business Process Requirement" type="interref">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -55772,7 +55745,7 @@
 <facet name="AttributeInterRefDomain" type="string">
 <value>
 <leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Activity Specification" val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
 </leo>
 </value>
 </facet>
@@ -56556,7 +56529,7 @@
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
 <attr val="Id" opt-write-protected="true" />
-<attr val="Referenced Specification" />
+<attr val="Referenced Business Process Requirement" />
 <chapter val="Representation" />
 <attr val="Orientation" />
 <attr val="Rotate the visualised values by 90 degrees" modifier-ctrltype="check" opt-ctrltype="true" val-unchecked-value="No" val-checked-value="Yes" val-enabled="((sOrientation)=(&quot;horizontal&quot;))" />
@@ -57481,7 +57454,7 @@
 </facets>
 <value>No</value>
 </attribute>
-<attribute name="Referenced Specification" type="interref">
+<attribute name="Referenced Business Process Requirement" type="interref">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -57495,7 +57468,7 @@
 <facet name="AttributeInterRefDomain" type="string">
 <value>
 <leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Activity Specification" val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
 </leo>
 </value>
 </facet>
@@ -57650,7 +57623,7 @@
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
 <attr val="Id" opt-write-protected="true" />
-<attr val="Referenced Specification" />
+<attr val="Referenced Business Process Requirement" />
 <chapter val="Representation" />
 <attr val="Color" modifier-dialog="color" opt-dialog="true" />
 <attr val="Boundary visible" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="Yes" val-unchecked-value="No" />
@@ -59450,27 +59423,6 @@
 </facets>
 <value></value>
 </attribute>
-<attribute name="Referenced Specification" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Activity Specification" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <attribute name="Position" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -60797,7 +60749,6 @@
 <pen val-color="black" val-w=".06cm" />
 <fill val-color="azure" />
 <ellipse val-x="((tabx3)+(.3cm))" val-y="((taby0)-(.3cm))" val-rx=".2cm" val-ry=".2cm" />
-<hotspot val="Referenced Specification" val-x="((tabx3)+(.1cm))" val-y="((taby0)-(.5cm))" val-w=".4cm" val-h=".4cm" />
 <endif />
 <aval val-showCap="Show Capacity" />
 <if val="((showCap)=(&quot;Yes&quot;))" />
@@ -60927,7 +60878,6 @@
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
 <attr val="Id" opt-write-protected="true" />
-<attr val="Referenced Specification" />
 <chapter val="Object properties" />
 <group val="Task relevance" />
 <attr val="Auditing" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="Yes" val-unchecked-value="No" />
@@ -61730,27 +61680,6 @@
 </facet>
 </facets>
 <value>No</value>
-</attribute>
-<attribute name="Referenced Sub-Process Specification" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain />
-<objref val-mt="Service description model" val-c="Activity Specification" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
 </attribute>
 <attribute name="Position" type="string">
 <facets>
@@ -66345,27 +66274,6 @@
 </facet>
 <facet name="AttributeRegularExpression" type="string">
 <value></value>
-</facet>
-</facets>
-<value></value>
-</attribute>
-<attribute name="Referenced Specification" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Activity Specification" val-max="1" />
-</leo>
-</value>
 </facet>
 </facets>
 <value></value>
@@ -80567,7 +80475,7 @@
 <facet name="AttributeInterRefDomain" type="string">
 <value>
 <leo><refdomain val-max="1" />
-<objref val-mt="Business Process Requirements Model" val-c="Business Process Requirement" val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
 </leo>
 </value>
 </facet>
@@ -80928,27 +80836,6 @@
 </facets>
 <value></value>
 </attribute>
-<attribute name="Referenced Specification" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Activity Specification" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -81240,7 +81127,7 @@
 <facet name="AttributeInterRefDomain" type="string">
 <value>
 <leo><refdomain val-max="1" />
-<objref val-mt="Workflow Descriptions Model" val-c="Workflow Description" val-max="1" />
+<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
 </leo>
 </value>
 </facet>
@@ -81604,27 +81491,6 @@
 </facets>
 <value></value>
 </attribute>
-<attribute name="Referenced Specification" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Activity Specification" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -81899,7 +81765,7 @@
 </classattribute>
 </attributes>
 </class>
-<class name="Business Process Requirement" superclass="__D-construct__" libtype="bp">
+<class name="Business Process Requirement" superclass="Activity Specification" libtype="bp">
 <attributes>
 <attribute name="Downtime in min/month" type="integer">
 <facets>
@@ -82582,6 +82448,941 @@
 </facets>
 <value></value>
 </attribute>
+<attribute name="Description" type="longstring">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Data Compliance" type="longstring">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Description" type="longstring">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Country" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Costs" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Responsible Author" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Working environment model" val-c="Organizational unit" val-max="1" />
+<objref val-mt="Working environment model" val-c="Role" val-max="1" />
+<objref val-mt="Working environment model" val-c="Performer" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="General Functionality" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>not applicable@Apply Rule@Manual@Receive@Transform@Send@Store@Wait@Update@Create@Assign@Others</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>not applicable</value>
+</attribute>
+<attribute name="Functional Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Functional Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Functional Ontology" />
+<execute val-file="db:\functional-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Functional Ontology</value>
+</attribute>
+<attribute name="Comments on Functional Requirements" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Vendor Criteria" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Avoid Vendor Lock@Trust@Security@Helpdesk available@Onsite Visits possible@Maintenance available@Training offered</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Payment" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Not-Decided-Yet@Pay-Per-Process@Pay-On-Demand@Pay-Monthly@Pay-Three-Monthly@Pay-Bi-Yearly@Pay-Yearly@Other</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Not-Decided-Yet</value>
+</attribute>
+<attribute name="Trust Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Trust Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Trust Ontology" />
+<execute val-file="db:\trust-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Trust Ontology</value>
+</attribute>
+<attribute name="Security Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Security Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Security Ontology" />
+<execute val-file="db:\security-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Security Ontology</value>
+</attribute>
+<attribute name="Comments on Business related Requirements" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyworkds in case aforementioned categories were insufficient.</value>
+</attribute>
+<attribute name="Data Location Overview" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>World-Wide@Europe@National@Regional@Local@Other</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>World-Wide</value>
+</attribute>
+<attribute name="Data Location Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Comments on Data Location" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... in case of missing keywords, feedback or additional comments.</value>
+</attribute>
+<attribute name="Domain Specific Certification" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>ITIL@ISO 27001@BASEL III@other</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Specific Certification Keyword" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... enter additional keyword in case not appropriate certifications have been found.</value>
+</attribute>
+<attribute name="Domain Specific Data Protection" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Encryption@Obfuscation@Anonymisation</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Specific Data Protection Keyword" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>...please add additional keywords, feedback and comments, if above list is not appropriate.</value>
+</attribute>
+<attribute name="Domain Specific Maturity Model" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>...</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Specific Maturity Model Keyword" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>...please add additional keywords, feedback and comments, if above list is not appropriate.</value>
+</attribute>
+<attribute name="Relevant Regulation List" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>...add relevant regulations here.</value>
+</attribute>
+<attribute name="General Input Datatype" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Text@Number@Date@Picture@File@Geo Data@User Data@Weblink@Configuration Format@Others</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Text</value>
+</attribute>
+<attribute name="Input Data Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Input Data Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Input Data Ontology" />
+<execute val-file="db:\input-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Input Data Ontology</value>
+</attribute>
+<attribute name="Free Input Data Keywords" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Free Functional Keywords" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Comments on Input Data Requirements" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="General Output Datatype" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Text@Number@Date@Picture@File@Geo Data@User Data@Weblink@Configuration Format@Others</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Text</value>
+</attribute>
+<attribute name="Output Data Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Output Data Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Output Data Ontology" />
+<execute val-file="db:\output-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Output Data Ontology</value>
+</attribute>
+<attribute name="Free Output Data Keywords" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Targeted Error Rate in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Green Yellow Error Rate Threshold in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Yellow Red Error Rate Threshold in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Targeted Availability Time in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Green Yellow Availability Time Threshold in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Yellow Red Availability Time Threshold in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Sample Service Link" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value></value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Sample Service Comments" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="General Planning Schedule" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>on-demand@no-specific time slot@Calendar specific time slots@Season specific time slot@Day specific time slot@Other time slot</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>on-demand</value>
+</attribute>
+<attribute name="Planning and Schedule Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Planning and Schedule Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Planning and Scheduling Ontology" />
+<execute val-file="db:\planning-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Planning and Scheduling Ontology</value>
+</attribute>
+<attribute name="Free Planning and Schedule Keywords" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Comments on Planning and Schedule Requirements" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="External Functional Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Input Data Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Output Data Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Planning and Scheduling Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Security Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Trust Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -82819,7 +83620,7 @@
 </classattribute>
 </attributes>
 </class>
-<class name="Workflow Description" superclass="__D-construct__" libtype="bp">
+<class name="Workflow Description" superclass="Activity Specification" libtype="bp">
 <attributes>
 <attribute name="Availability in %" type="double">
 <facets>
@@ -83654,6 +84455,941 @@
 <value></value>
 </attribute>
 <attribute name="Action Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Description" type="longstring">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Data Compliance" type="longstring">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Description" type="longstring">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Country" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Costs" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Responsible Author" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Working environment model" val-c="Organizational unit" val-max="1" />
+<objref val-mt="Working environment model" val-c="Role" val-max="1" />
+<objref val-mt="Working environment model" val-c="Performer" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="General Functionality" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>not applicable@Apply Rule@Manual@Receive@Transform@Send@Store@Wait@Update@Create@Assign@Others</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>not applicable</value>
+</attribute>
+<attribute name="Functional Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Functional Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Functional Ontology" />
+<execute val-file="db:\functional-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Functional Ontology</value>
+</attribute>
+<attribute name="Comments on Functional Requirements" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Vendor Criteria" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Avoid Vendor Lock@Trust@Security@Helpdesk available@Onsite Visits possible@Maintenance available@Training offered</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Payment" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Not-Decided-Yet@Pay-Per-Process@Pay-On-Demand@Pay-Monthly@Pay-Three-Monthly@Pay-Bi-Yearly@Pay-Yearly@Other</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Not-Decided-Yet</value>
+</attribute>
+<attribute name="Trust Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Trust Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Trust Ontology" />
+<execute val-file="db:\trust-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Trust Ontology</value>
+</attribute>
+<attribute name="Security Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Security Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Security Ontology" />
+<execute val-file="db:\security-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Security Ontology</value>
+</attribute>
+<attribute name="Comments on Business related Requirements" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyworkds in case aforementioned categories were insufficient.</value>
+</attribute>
+<attribute name="Data Location Overview" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>World-Wide@Europe@National@Regional@Local@Other</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>World-Wide</value>
+</attribute>
+<attribute name="Data Location Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Comments on Data Location" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... in case of missing keywords, feedback or additional comments.</value>
+</attribute>
+<attribute name="Domain Specific Certification" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>ITIL@ISO 27001@BASEL III@other</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Specific Certification Keyword" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... enter additional keyword in case not appropriate certifications have been found.</value>
+</attribute>
+<attribute name="Domain Specific Data Protection" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Encryption@Obfuscation@Anonymisation</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Specific Data Protection Keyword" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>...please add additional keywords, feedback and comments, if above list is not appropriate.</value>
+</attribute>
+<attribute name="Domain Specific Maturity Model" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>...</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Domain Specific Maturity Model Keyword" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>...please add additional keywords, feedback and comments, if above list is not appropriate.</value>
+</attribute>
+<attribute name="Relevant Regulation List" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>...add relevant regulations here.</value>
+</attribute>
+<attribute name="General Input Datatype" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Text@Number@Date@Picture@File@Geo Data@User Data@Weblink@Configuration Format@Others</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Text</value>
+</attribute>
+<attribute name="Input Data Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Input Data Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Input Data Ontology" />
+<execute val-file="db:\input-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Input Data Ontology</value>
+</attribute>
+<attribute name="Free Input Data Keywords" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Free Functional Keywords" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Comments on Input Data Requirements" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="General Output Datatype" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Text@Number@Date@Picture@File@Geo Data@User Data@Weblink@Configuration Format@Others</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Text</value>
+</attribute>
+<attribute name="Output Data Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Output Data Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Output Data Ontology" />
+<execute val-file="db:\output-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Output Data Ontology</value>
+</attribute>
+<attribute name="Free Output Data Keywords" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Targeted Error Rate in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Green Yellow Error Rate Threshold in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Yellow Red Error Rate Threshold in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Targeted Availability Time in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Green Yellow Availability Time Threshold in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Yellow Red Availability Time Threshold in %" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Sample Service Link" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value></value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Sample Service Comments" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="General Planning Schedule" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>on-demand@no-specific time slot@Calendar specific time slots@Season specific time slot@Day specific time slot@Other time slot</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>on-demand</value>
+</attribute>
+<attribute name="Planning and Schedule Description" type="interref">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeInterRefDomain" type="string">
+<value>
+<leo><refdomain val-max="1" />
+<objref val-mt="Semantic Transit Model" val-c="Concept" val-max="1" />
+</leo>
+</value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Access External Planning and Schedule Ontology" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Annotate with External Planning and Scheduling Ontology" />
+<execute val-file="db:\planning-annotation.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Annotate with External Planning and Scheduling Ontology</value>
+</attribute>
+<attribute name="Free Planning and Schedule Keywords" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="Comments on Planning and Schedule Requirements" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>1</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>... free keyword if not appropriate concepts found ... </value>
+</attribute>
+<attribute name="External Functional Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Input Data Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Output Data Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Planning and Scheduling Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Security Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="External Trust Annotation" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
