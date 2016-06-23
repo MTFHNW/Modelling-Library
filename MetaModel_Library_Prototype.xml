@@ -1,4 +1,4 @@
-<?xml version="1.1" encoding="UTF-8"?><library language="en" name="Cloudsocket_Prototype Library v1.26">
+<?xml version="1.1" encoding="UTF-8"?><library language="en" name="Cloudsocket_Prototype Library v1.28">
 <attributes>
 <attribute name="Version number" type="longstring" libtype="bp">
 <facets>
@@ -26,7 +26,7 @@
 <value></value>
 </facet>
 </facets>
-<value>22.06.2016, 13:36</value>
+<value>23.06.2016, 10:11</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="bp">
 <facets>
@@ -148,7 +148,6 @@
 <incl val="Non-exclusive Gateway (converging)" />
 <incl val="Data Object" />
 <incl val="Message" />
-<incl val="Group" />
 <incl val="Business Process Annotation Group" />
 <incl val="Text Annotation" />
 <incl val="Relation Node" />
@@ -167,6 +166,7 @@
 <incl val="Sets" />
 <incl val="Owns" />
 <incl val="has Note" />
+<incl val="Group" />
 <mode val="Business Process Diagram" modifier-from="all" opt-from="true" />
 <excl val="Variable" />
 <excl val="Random generator" />
@@ -196,8 +196,8 @@
 <mode val="All modelling objects" modifier-from="all" opt-from="true" />
 <mode val="Documentation" modifier-from="all" opt-from="true" opt-no-modeling="true" />
 <modeltype val="Service description model" />
-<incl val="Workflow Description" />
 <incl val="Business Process Requirement" />
+<incl val="Workflow Description" />
 <incl val="Note" />
 <mode val="Documentation" modifier-from="all" opt-from="true" opt-no-modeling="true" />
 <modeltype val="Workflow diagram (BPMN 2.0)" modifier-from="none" opt-from="true" val-plural="Workflow diagrams (BPMN 2.0)" val-pos="2" val-bitmap="db:\wf_icon.png" val-attrrep="BPMN20 Model Attributes" val-graphrep="BPM Model Graphrep" />
@@ -215,7 +215,6 @@
 <incl val="Non-exclusive Gateway (converging)" />
 <incl val="Data Object" />
 <incl val="Message" />
-<incl val="Group" />
 <incl val="Workflow Annotation Group" />
 <incl val="Text Annotation" />
 <incl val="Relation Node" />
@@ -234,6 +233,7 @@
 <incl val="Sets" />
 <incl val="Owns" />
 <incl val="has Note" />
+<incl val="Group" />
 <mode val="Documentation" modifier-from="all" opt-from="true" opt-no-modeling="true" />
 <modeltype val="Document model" modifier-from="none" opt-from="true" val-plural="Document models" val-pos="4" opt-not-simulateable="true" val-bitmap="db:\doc_mod.bmp" val-attrrep="BP Model Attributes" val-graphrep="BP Model Graphrep" />
 <incl val="Document" />
@@ -1492,7 +1492,7 @@
 <value></value>
 </facet>
 </facets>
-<value>22.06.2016, 10:48</value>
+<value>21.06.2016, 19:37</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="we">
 <facets>
@@ -14588,27 +14588,6 @@
 </facets>
 <value>Yes</value>
 </attribute>
-<attribute name="Related Business Process Requirement" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <attribute name="Position" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -20266,7 +20245,7 @@
 <value></value>
 </facet>
 </facets>
-<value>C:\Users\LAMMEL~1\AppData\Local\Temp\ado4fe9aabe-21a0-477c-93d3-e2be03e49207</value>
+<value>C:\Users\lae\AppData\Local\Temp\ado42b38d64-5878-47b8-9bfe-28aeb2de0758</value>
 </classattribute>
 <classattribute name="Model tree" type="enum">
 <facets>
@@ -42345,27 +42324,6 @@
 </facets>
 <value>Yes</value>
 </attribute>
-<attribute name="Related Business Process Requirement" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <classattribute name="Doku" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -42729,7 +42687,6 @@
 <attr val="Description" val-lines="5" />
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
-<attr val="Related Business Process Requirement" />
 <chapter val="Representation" />
 <group val="Swimlane" />
 <attr val="Color" modifier-dialog="color" opt-dialog="true" />
@@ -43435,27 +43392,6 @@
 </facets>
 <value>Yes</value>
 </attribute>
-<attribute name="Related Business Process Requirement" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <classattribute name="Doku" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -43820,7 +43756,6 @@
 <attr val="Description" val-lines="5" />
 <attr val="Comment" val-lines="5" />
 <attr val="Open questions" val-lines="5" />
-<attr val="Related Business Process Requirement" />
 <chapter val="Representation" />
 <group val="Swimlane" />
 <attr val="Color" modifier-dialog="color" opt-dialog="true" />
@@ -55796,48 +55731,6 @@
 </facets>
 <value>No</value>
 </attribute>
-<attribute name="Referenced Business Process Requirement" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
-<attribute name="Referenced Workflow Description" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Workflow Description" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <attribute name="Position" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -57539,48 +57432,6 @@
 </facets>
 <value>No</value>
 </attribute>
-<attribute name="Referenced Business Process Requirement" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
-<attribute name="Referenced Workflow Description" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Workflow Description" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -58132,27 +57983,6 @@
 </facets>
 <value></value>
 </attribute>
-<attribute name="Referenced Business Process Requirement" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <attribute name="Referenced Workflow Description" type="interref">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -58638,7 +58468,8 @@
 </facet>
 </facets>
 <value>
-<leo><attr val="Referenced Workflow Description" />
+<leo><attr val="Name" />
+<attr val="Referenced Workflow Description" />
 <notebook />
 <chapter val="Description" />
 <attr val="Name" />
@@ -75368,27 +75199,6 @@
 </facets>
 <value>Yes</value>
 </attribute>
-<attribute name="Related Business Process Requirement" type="interref">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeInterRefDomain" type="string">
-<value>
-<leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
-</leo>
-</value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -75480,7 +75290,6 @@
 <attr val="Name" />
 <attr val="Description" />
 <attr val="Referenced process" />
-<attr val="Related Business Process Requirement" />
 <chapter val="Representation" />
 <attr val="Color" modifier-dialog="color" opt-dialog="true" />
 <chapter val="Semantic Enrichment" />
@@ -81297,7 +81106,7 @@
 <facet name="AttributeInterRefDomain" type="string">
 <value>
 <leo><refdomain val-max="1" />
-<objref val-mt="Service description model" val-c="Business Process Requirement" val-max="1" />
+<objref val-mt="Service description model" val-c="Workflow Description" val-max="1" />
 </leo>
 </value>
 </facet>
@@ -81992,23 +81801,6 @@
 </facets>
 <value>Set Data Encryption Level</value>
 </attribute>
-<attribute name="Historical Access to Data Storage" type="enum">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>Include@Do not include</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value>Include</value>
-</attribute>
 <attribute name="Set Expected Frequency of Storage" type="enum">
 <facets>
 <facet name="EnumerationDomain" type="string">
@@ -82129,92 +81921,7 @@
 </facets>
 <value>0</value>
 </attribute>
-<attribute name="Max Discount for Lack of Availability in %" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Max Discount for Lack of Capacity in %" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Max Discount for Service Response Delays in %" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
 <attribute name="Response Time in min" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Help-Desk Response Time in min" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Max Discount for Support Delays in %" type="double">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -82335,6 +82042,171 @@
 <value>Set Media Type</value>
 </attribute>
 <attribute name="Number of process execution" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Access Period" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Set Access Period" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set Access Period" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="top:Time" />
+<setg val-s_Annotation_AttrName="Access Period" />
+<execute val-file="db:\setAnnotationAppSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Set Access Period</value>
+</attribute>
+<attribute name="Frequency of Backup" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Set Frequency of Backup" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set Frequency of Backup" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="top:Time" />
+<setg val-s_Annotation_AttrName="Frequency of Backup" />
+<execute val-file="db:\setAnnotationAppSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Set Frequency of Backup</value>
+</attribute>
+<attribute name="Time of Restore" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Set Time of Restore" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set Time of Restore" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="top:Time" />
+<setg val-s_Annotation_AttrName="Time of Restore" />
+<execute val-file="db:\setAnnotationAppSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Set Time of Restore</value>
+</attribute>
+<attribute name="Support Service" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Include weekend@Monday to Friday@Monday to Saturday@24/7@Do not include service support</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Start Hour" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="End Hour" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -83664,8 +83536,12 @@
 <attr val="Set Data Encryption Level" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 <group val="Backup Management" modifier-color="blue" opt-color="true" />
-<attr val="Historical Access to Data Storage" modifier-ctrltype="dropdown" opt-ctrltype="true" />
-<attr val="Set Expected Frequency of Storage" modifier-ctrltype="dropdown" opt-ctrltype="true" />
+<attr val="Access Period" />
+<attr val="Set Access Period" opt-push-button="true" opt-no-param="true" />
+<attr val="Frequency of Backup" />
+<attr val="Set Frequency of Backup" opt-push-button="true" opt-no-param="true" />
+<attr val="Time of Restore" />
+<attr val="Set Time of Restore" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 <group val="Data Location" modifier-color="green" opt-color="true" />
 <attr val="Data Location Annotation" />
@@ -83681,8 +83557,12 @@
 <attr val="Number of Simultaneous Users" />
 <group val="Response Time" modifier-color="green" opt-color="true" />
 <attr val="Response Time in min" />
-<group val="Support" modifier-color="green" opt-color="true" />
-<attr val="Help-Desk Response Time in min" />
+<chapter val="Support Service" />
+<group val="Support Service" />
+<attr val="Support Service" />
+<group val="Define Hours" />
+<attr val="Start Hour" />
+<attr val="End Hour" />
 <endgroup />
 <chapter val="Payment" />
 <group val="Payment" modifier-color="orange" opt-color="true" />
@@ -83690,13 +83570,6 @@
 <attr val="Set Payment Plan" opt-push-button="true" opt-no-param="true" />
 <attr val="Payment Type" />
 <attr val="User Target" />
-<endgroup />
-<chapter val="Discount" />
-<group val="Discount in case of poor performance" modifier-color="red" opt-color="true" />
-<attr val="Max Discount for Lack of Availability in %" />
-<attr val="Max Discount for Service Response Delays in %" />
-<attr val="Max Discount for Lack of Capacity in %" />
-<attr val="Max Discount for Support Delays in %" />
 <endgroup />
 </leo>
 </value>
@@ -83867,7 +83740,7 @@
 <value>
 <leo><item val="Set Type of backup" />
 <setg val-n_AttrId="attrid" />
-<setg val-s_WSpath="bpaas:TypeOfBackup" />
+<setg val-s_WSpath="bpaas:BackupManagement" />
 <setg val-s_Annotation_AttrName="Type of backup Annotation" />
 <execute val-file="db:\setAnnotationAppSingle.asc" />
 </leo>
@@ -83905,7 +83778,7 @@
 <value>
 <leo><item val="Set Type of Encryption" />
 <setg val-n_AttrId="attrid" />
-<setg val-s_WSpath="bpaas:TypeOfEncryption" />
+<setg val-s_WSpath="bpaas:Encryption" />
 <setg val-s_Annotation_AttrName="Type of Encryption Annotation" />
 <execute val-file="db:\setAnnotationAppSingle.asc" />
 </leo>
@@ -84005,7 +83878,7 @@
 <value>
 <leo><item val="Set Offered Payment Plan" />
 <setg val-n_AttrId="attrid" />
-<setg val-s_WSpath="bpaas:OfferedPaymentPlan" />
+<setg val-s_WSpath="bpaas:PaymentPlan" />
 <setg val-s_Annotation_AttrName="Offered Payment Plan Annotation" />
 <execute val-file="db:\setAnnotationAppSingle.asc" />
 </leo>
@@ -84055,57 +83928,6 @@
 <value>0</value>
 </attribute>
 <attribute name="Maximum Simultaneous Connections" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Offered Discount for Lack of Capacity in %" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Offered Discount for Lack of Availability in %" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Offered Discount for Response Time Delay in %" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -84253,23 +84075,6 @@
 <value>0</value>
 </attribute>
 <attribute name="Max Support Hours per Month" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Offered Discount for Lack of Support in %" type="double">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -85707,9 +85512,10 @@
 <attr val="Maximum Simultaneous Connections" />
 <attr val="Maximum Simultaneous Service Users" />
 <endgroup />
-<group val="Respnse Time" />
+<group val="Response Time" />
 <attr val="Max Average Response Time" />
 <endgroup />
+<chapter val="Service Support" />
 <group val="Support" />
 <attr val="Max Responsiveness Time per Request" />
 <attr val="Max Resolution Time per Request" />
@@ -85721,13 +85527,6 @@
 <attr val="Set Offered Payment Plan" opt-push-button="true" opt-no-param="true" />
 <attr val="Addressed User Target" />
 <attr val="Accepted Payment" />
-<endgroup />
-<chapter val="Discount" />
-<group val="Offered Discount" />
-<attr val="Offered Discount for Lack of Availability in %" />
-<attr val="Offered Discount for Lack of Capacity in %" />
-<attr val="Offered Discount for Response Time Delay in %" />
-<attr val="Offered Discount for Lack of Support in %" />
 <endgroup />
 </leo>
 </value>
