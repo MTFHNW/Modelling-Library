@@ -1,4 +1,4 @@
-<?xml version="1.1" encoding="UTF-8"?><library language="en" name="Cloudsocket_Prototype Library v1.28">
+<?xml version="1.1" encoding="UTF-8"?><library language="en" name="Cloudsocket_Prototype Library v1.29">
 <attributes>
 <attribute name="Version number" type="longstring" libtype="bp">
 <facets>
@@ -26,7 +26,7 @@
 <value></value>
 </facet>
 </facets>
-<value>23.06.2016, 10:11</value>
+<value>28.06.2016, 15:12</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="bp">
 <facets>
@@ -1492,7 +1492,7 @@
 <value></value>
 </facet>
 </facets>
-<value>21.06.2016, 19:37</value>
+<value>27.06.2016, 09:46</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="we">
 <facets>
@@ -20245,7 +20245,7 @@
 <value></value>
 </facet>
 </facets>
-<value>C:\Users\lae\AppData\Local\Temp\ado42b38d64-5878-47b8-9bfe-28aeb2de0758</value>
+<value>C:\Users\LAMMEL~1\AppData\Local\Temp\ado93d29a9c-fe06-4051-8689-3b62a3751e95</value>
 </classattribute>
 <classattribute name="Model tree" type="enum">
 <facets>
@@ -81921,23 +81921,6 @@
 </facets>
 <value>0</value>
 </attribute>
-<attribute name="Response Time in min" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
 <attribute name="Choose Payment Type" type="programcall">
 <facets>
 <facet name="EnumerationDomain" type="string">
@@ -82175,7 +82158,7 @@
 <attribute name="Support Service" type="enumlist">
 <facets>
 <facet name="EnumerationDomain" type="string">
-<value>Include weekend@Monday to Friday@Monday to Saturday@24/7@Do not include service support</value>
+<value>Monday@Tuesday@Wednesday@Thursday@Friday@Saturday@Sunday@Mon-Fri@Mon-Sat</value>
 </facet>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -82189,7 +82172,7 @@
 </facets>
 <value></value>
 </attribute>
-<attribute name="Start Hour" type="integer">
+<attribute name="Response Time Level" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -82200,13 +82183,51 @@
 <facet name="AttributeRegularExpression" type="string">
 <value></value>
 </facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
 </facets>
-<value>0</value>
+<value></value>
 </attribute>
-<attribute name="End Hour" type="integer">
+<attribute name="Set Response Time Level" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set Response Time Level" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="bpaas:RequirementLevel" />
+<setg val-s_Annotation_AttrName="Response Time Level" />
+<execute val-file="db:\setAnnotationAppSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Set Response Time Level</value>
+</attribute>
+<attribute name="24/7 Support" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>true@false</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>false</value>
+</attribute>
+<attribute name="Support Start Hour" type="time">
 <facets>
 <facet name="MultiLineString" type="integer">
 <value>0</value>
@@ -82217,11 +82238,22 @@
 <facet name="AttributeRegularExpression" type="string">
 <value></value>
 </facet>
-<facet name="AttributeNumericDomain" type="string">
+</facets>
+<value>00:000:00:00:00</value>
+</attribute>
+<attribute name="Support End Hour" type="time">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
 <value></value>
 </facet>
 </facets>
-<value>0</value>
+<value>00:000:00:00:00</value>
 </attribute>
 <attribute name="Position" type="string">
 <facets>
@@ -83556,13 +83588,16 @@
 <attr val="Number of process execution" />
 <attr val="Number of Simultaneous Users" />
 <group val="Response Time" modifier-color="green" opt-color="true" />
-<attr val="Response Time in min" />
+<attr val="Response Time Level" />
+<attr val="Set Response Time Level" opt-push-button="true" opt-no-param="true" />
+<aval val-support24_7="24/7 Support" />
 <chapter val="Support Service" />
 <group val="Support Service" />
-<attr val="Support Service" />
+<attr val="Support Service" val-enabled="((support24_7)=(&quot;false&quot;))" />
 <group val="Define Hours" />
-<attr val="Start Hour" />
-<attr val="End Hour" />
+<attr val="Support Start Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
+<attr val="Support End Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
+<attr val="24/7 Support" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="true" val-unchecked-value="false" />
 <endgroup />
 <chapter val="Payment" />
 <group val="Payment" modifier-color="orange" opt-color="true" />
@@ -83719,44 +83754,6 @@
 </facet>
 </facets>
 <value></value>
-</attribute>
-<attribute name="Type of backup Annotation" type="string">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value></value>
-</attribute>
-<attribute name="Set Type of backup" type="programcall">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>
-<leo><item val="Set Type of backup" />
-<setg val-n_AttrId="attrid" />
-<setg val-s_WSpath="bpaas:BackupManagement" />
-<setg val-s_Annotation_AttrName="Type of backup Annotation" />
-<execute val-file="db:\setAnnotationAppSingle.asc" />
-</leo>
-</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value>Set Type of backup</value>
 </attribute>
 <attribute name="Type of Encryption Annotation" type="string">
 <facets>
@@ -83972,40 +83969,6 @@
 </facets>
 <value>00:000:00:00:00</value>
 </attribute>
-<attribute name="Max Average Response Time" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Max Data Restoration Time" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
 <attribute name="Offered Successful Request per Month in %" type="double">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -84175,6 +84138,99 @@
 </facet>
 </facets>
 <value></value>
+</attribute>
+<attribute name="Max Average Response Time" type="time">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>00:000:00:00:00</value>
+</attribute>
+<attribute name="Type of Backup" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Incremental@Differential@Full</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Support Days Coverage" type="enumlist">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>Monday@Tuesday@Wednesday@Thursday@Friday@Saturday@Sunday</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Support Start Hour" type="time">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>00:000:00:00:00</value>
+</attribute>
+<attribute name="Support End Hour" type="time">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>00:000:00:00:00</value>
+</attribute>
+<attribute name="24/7 Support" type="enum">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>true@false</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>false</value>
 </attribute>
 <attribute name="Position" type="string">
 <facets>
@@ -85485,9 +85541,7 @@
 <endgroup />
 <chapter val="Data Security Infrastructure" />
 <group val="Backup" />
-<attr val="Type of backup Annotation" />
-<attr val="Set Type of backup" opt-push-button="true" opt-no-param="true" />
-<attr val="Max Data Restoration Time" />
+<attr val="Type of Backup" />
 <attr val="Max Successful Data Restorations in %" />
 <endgroup />
 <group val="Type of Encryption" />
@@ -85514,6 +85568,16 @@
 <endgroup />
 <group val="Response Time" />
 <attr val="Max Average Response Time" />
+<endgroup />
+<aval val-support24_7="24/7 Support" />
+<chapter val="Support Service" />
+<group val="Days" />
+<attr val="Support Days Coverage" val-enabled="((support24_7)=(&quot;false&quot;))" />
+<endgroup />
+<group val="Time" />
+<attr val="Support Start Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
+<attr val="Support End Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
+<attr val="24/7 Support" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="true" val-unchecked-value="false" />
 <endgroup />
 <chapter val="Service Support" />
 <group val="Support" />
