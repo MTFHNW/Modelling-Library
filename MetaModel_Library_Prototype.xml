@@ -26,7 +26,7 @@
 <value></value>
 </facet>
 </facets>
-<value>30.06.2016, 09:48</value>
+<value>30.06.2016, 12:34</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="bp">
 <facets>
@@ -20245,7 +20245,7 @@
 <value></value>
 </facet>
 </facets>
-<value>C:\Users\LAMMEL~1\AppData\Local\Temp\ado0b1d690b-ef59-48c3-a717-611def50d692</value>
+<value>C:\Users\LAMMEL~1\AppData\Local\Temp\adob444f1e9-3ade-41b1-8727-256fd822a5a8</value>
 </classattribute>
 <classattribute name="Model tree" type="enum">
 <facets>
@@ -73405,6 +73405,65 @@
 </facets>
 <value>Set Backup Frequency</value>
 </attribute>
+<attribute name="Retention Time in Months" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value>
+<leo><domain val-message="Enter a value between 0 and 11." />
+<interval val-lowerbound="0" val-upperbound="11" />
+</leo>
+</value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Retention Time in Weeks" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value>
+<leo><domain val-message="Enter a value between 0 and 52." />
+<interval val-lowerbound="0" val-upperbound="52" />
+</leo>
+</value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Retention Time in Years" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
 <attribute name="Position" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -81902,7 +81961,7 @@
 <setg val-n_AttrId="attrid" />
 <setg val-s_WSpath="bpaas:PaymentPlan" />
 <setg val-s_Annotation_AttrName="Payment Plan Annotation" />
-<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
+<execute val-file="db:\setAnnotationAppSingle.asc" />
 </leo>
 </value>
 </facet>
@@ -82128,40 +82187,6 @@
 </facets>
 <value>00:000:00:00:00</value>
 </attribute>
-<attribute name="Retention Time in Weeks" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Retention Time in Months" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
 <attribute name="Restore Time in min" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -82218,7 +82243,7 @@
 <setg val-n_AttrId="attrid" />
 <setg val-s_WSpath="bpaas:TargetMarket" />
 <setg val-s_Annotation_AttrName="User Target Annotation" />
-<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
+<execute val-file="db:\setAnnotationAppSingle.asc" />
 </leo>
 </value>
 </facet>
@@ -82233,23 +82258,6 @@
 </facet>
 </facets>
 <value>Set User Target</value>
-</attribute>
-<attribute name="Retention Time in Years" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
 </attribute>
 <attribute name="Position" type="string">
 <facets>
@@ -83491,6 +83499,65 @@
 </facets>
 <value></value>
 </attribute>
+<attribute name="Retention Time in Months" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value>
+<leo><domain val-message="Enter a value between 0 and 11." />
+<interval val-lowerbound="0" val-upperbound="11" />
+</leo>
+</value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Retention Time in Weeks" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value>
+<leo><domain val-message="Enter a value between 0 and 52." />
+<interval val-lowerbound="0" val-upperbound="52" />
+</leo>
+</value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Retention Time in Years" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -83608,7 +83675,6 @@
 <attr val="Retention Time in Years" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
 <attr val="Retention Time in Months" val-enabled="(((retentionYears)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
 <attr val="Retention Time in Weeks" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionYears)=(&quot;0&quot;)))" />
-<attr val="Restore Time in min" />
 <endgroup />
 <group val="Backup Frequency" modifier-color="black" opt-color="true" />
 <attr val="Backup Frequency Annotation" />
@@ -84243,57 +84309,6 @@
 </facet>
 </facets>
 <value>Set Addressed User Target</value>
-</attribute>
-<attribute name="Promised Retention Time in Years" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Promised Retention Time in Months" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Promised Retention Time in Weeks" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
 </attribute>
 <attribute name="Offered User Target Annotation" type="string">
 <facets>
@@ -85549,6 +85564,65 @@
 </facets>
 <value></value>
 </attribute>
+<attribute name="Retention Time in Months" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value>
+<leo><domain val-message="Enter a value between 0 and 11." />
+<interval val-lowerbound="0" val-upperbound="11" />
+</leo>
+</value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Retention Time in Weeks" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value>
+<leo><domain val-message="Enter a value between 0 and 52." />
+<interval val-lowerbound="0" val-upperbound="52" />
+</leo>
+</value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Retention Time in Years" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -85659,14 +85733,13 @@
 <attr val="Type of Encryption Annotation" />
 <attr val="Set Type of Encryption" opt-push-button="true" opt-no-param="true" />
 <endgroup />
-<aval val-retentionYears="Promised Retention Time in Years" />
-<aval val-retentionMonths="Promised Retention Time in Months" />
-<aval val-retentionWeeks="Promised Retention Time in Weeks" />
+<aval val-retentionYears="Retention Time in Years" />
+<aval val-retentionMonths="Retention Time in Months" />
+<aval val-retentionWeeks="Retention Time in Weeks" />
 <group val="Backup Management" modifier-color="red" opt-color="true" />
-<attr val="Promised Retention Time in Years" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
-<attr val="Promised Retention Time in Months" val-enabled="(((retentionYears)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
-<attr val="Promised Retention Time in Weeks" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionYears)=(&quot;0&quot;)))" />
-<attr val="Max Restore Time in min" />
+<attr val="Retention Time in Years" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
+<attr val="Retention Time in Months" val-enabled="(((retentionYears)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
+<attr val="Retention Time in Weeks" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionYears)=(&quot;0&quot;)))" />
 <endgroup />
 <group val="Backup Frequency" modifier-color="black" opt-color="true" />
 <attr val="Backup Frequency Annotation" />
