@@ -1,4 +1,4 @@
-<?xml version="1.1" encoding="UTF-8"?><library language="en" name="Cloudsocket_Prototype Library v1.29">
+<?xml version="1.1" encoding="UTF-8"?><library language="en" name="Cloudsocket_Prototype Library v1.3">
 <attributes>
 <attribute name="Version number" type="longstring" libtype="bp">
 <facets>
@@ -26,7 +26,7 @@
 <value></value>
 </facet>
 </facets>
-<value>28.06.2016, 15:12</value>
+<value>30.06.2016, 09:48</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="bp">
 <facets>
@@ -1492,7 +1492,7 @@
 <value></value>
 </facet>
 </facets>
-<value>27.06.2016, 09:46</value>
+<value>30.06.2016, 08:54</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="we">
 <facets>
@@ -20245,7 +20245,7 @@
 <value></value>
 </facet>
 </facets>
-<value>C:\Users\LAMMEL~1\AppData\Local\Temp\ado93d29a9c-fe06-4051-8689-3b62a3751e95</value>
+<value>C:\Users\LAMMEL~1\AppData\Local\Temp\ado0b1d690b-ef59-48c3-a717-611def50d692</value>
 </classattribute>
 <classattribute name="Model tree" type="enum">
 <facets>
@@ -73367,6 +73367,44 @@
 </facets>
 <value></value>
 </attribute>
+<attribute name="Backup Frequency Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Set Backup Frequency" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set Backup Frequency" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="bpaas:BackupFrequency" />
+<setg val-s_Annotation_AttrName="Backup Frequency Annotation" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Set Backup Frequency</value>
+</attribute>
 <attribute name="Position" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -81785,7 +81823,7 @@
 <setg val-n_AttrId="attrid" />
 <setg val-s_WSpath="bpaas:RequirementLevel" />
 <setg val-s_Annotation_AttrName="Data Encryption Annotation" />
-<execute val-file="db:\setAnnotationAppSingle.asc" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
 </leo>
 </value>
 </facet>
@@ -81864,7 +81902,7 @@
 <setg val-n_AttrId="attrid" />
 <setg val-s_WSpath="bpaas:PaymentPlan" />
 <setg val-s_Annotation_AttrName="Payment Plan Annotation" />
-<execute val-file="db:\setAnnotationAppSingle.asc" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
 </leo>
 </value>
 </facet>
@@ -81952,40 +81990,6 @@
 </facets>
 <value></value>
 </attribute>
-<attribute name="Payment Type" type="enumlist">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>Slow Transaction@Medium and Safe Transaction@Fast Transaction</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value></value>
-</attribute>
-<attribute name="User Target" type="enumlist">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>Individuals@Businesses@Small Teams@Growing Teams@Schools and Universities@Students and Teachers@No Specific Target</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <attribute name="What would you like to upload?" type="string">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -82023,137 +82027,6 @@
 </facet>
 </facets>
 <value>Set Media Type</value>
-</attribute>
-<attribute name="Number of process execution" type="integer">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Access Period" type="string">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value></value>
-</attribute>
-<attribute name="Set Access Period" type="programcall">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>
-<leo><item val="Set Access Period" />
-<setg val-n_AttrId="attrid" />
-<setg val-s_WSpath="top:Time" />
-<setg val-s_Annotation_AttrName="Access Period" />
-<execute val-file="db:\setAnnotationAppSingle.asc" />
-</leo>
-</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value>Set Access Period</value>
-</attribute>
-<attribute name="Frequency of Backup" type="string">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value></value>
-</attribute>
-<attribute name="Set Frequency of Backup" type="programcall">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>
-<leo><item val="Set Frequency of Backup" />
-<setg val-n_AttrId="attrid" />
-<setg val-s_WSpath="top:Time" />
-<setg val-s_Annotation_AttrName="Frequency of Backup" />
-<execute val-file="db:\setAnnotationAppSingle.asc" />
-</leo>
-</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value>Set Frequency of Backup</value>
-</attribute>
-<attribute name="Time of Restore" type="string">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value></value>
-</attribute>
-<attribute name="Set Time of Restore" type="programcall">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>
-<leo><item val="Set Time of Restore" />
-<setg val-n_AttrId="attrid" />
-<setg val-s_WSpath="top:Time" />
-<setg val-s_Annotation_AttrName="Time of Restore" />
-<execute val-file="db:\setAnnotationAppSingle.asc" />
-</leo>
-</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value>Set Time of Restore</value>
 </attribute>
 <attribute name="Support Service" type="enumlist">
 <facets>
@@ -82254,6 +82127,129 @@
 </facet>
 </facets>
 <value>00:000:00:00:00</value>
+</attribute>
+<attribute name="Retention Time in Weeks" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Retention Time in Months" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Restore Time in min" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Number of Process Execution per Year" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="User Target Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Set User Target" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set User Target" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="bpaas:TargetMarket" />
+<setg val-s_Annotation_AttrName="User Target Annotation" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Set User Target</value>
+</attribute>
+<attribute name="Retention Time in Years" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
 </attribute>
 <attribute name="Position" type="string">
 <facets>
@@ -83457,6 +83453,44 @@
 </facets>
 <value></value>
 </attribute>
+<attribute name="Backup Frequency Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Set Backup Frequency" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set Backup Frequency" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="bpaas:BackupFrequency" />
+<setg val-s_Annotation_AttrName="Backup Frequency Annotation" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -83563,48 +83597,53 @@
 <attr val="Set Object" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 <chapter val="Data Security" />
-<group val="Data Encryption" modifier-color="brown" opt-color="true" />
+<group val="Data Encryption" modifier-color="red" opt-color="true" />
 <attr val="Data Encryption Annotation" />
 <attr val="Set Data Encryption Level" opt-push-button="true" opt-no-param="true" />
 <endgroup />
-<group val="Backup Management" modifier-color="blue" opt-color="true" />
-<attr val="Access Period" />
-<attr val="Set Access Period" opt-push-button="true" opt-no-param="true" />
-<attr val="Frequency of Backup" />
-<attr val="Set Frequency of Backup" opt-push-button="true" opt-no-param="true" />
-<attr val="Time of Restore" />
-<attr val="Set Time of Restore" opt-push-button="true" opt-no-param="true" />
+<aval val-retentionYears="Retention Time in Years" />
+<aval val-retentionMonths="Retention Time in Months" />
+<aval val-retentionWeeks="Retention Time in Weeks" />
+<group val="Backup Management" modifier-color="red" opt-color="true" />
+<attr val="Retention Time in Years" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
+<attr val="Retention Time in Months" val-enabled="(((retentionYears)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
+<attr val="Retention Time in Weeks" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionYears)=(&quot;0&quot;)))" />
+<attr val="Restore Time in min" />
 <endgroup />
-<group val="Data Location" modifier-color="green" opt-color="true" />
+<group val="Backup Frequency" modifier-color="black" opt-color="true" />
+<attr val="Backup Frequency Annotation" />
+<attr val="Set Backup Frequency" opt-push-button="true" opt-no-param="true" />
+<endgroup />
+<group val="Data Location" modifier-color="red" opt-color="true" />
 <attr val="Data Location Annotation" />
 <attr val="Set Data Location" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 <chapter val="Performance" />
-<group val="Availability" modifier-color="green" opt-color="true" />
+<group val="Availability" modifier-color="red" opt-color="true" />
 <attr val="Downtime in min/month" />
-<group val="Capacity" modifier-color="green" opt-color="true" />
+<group val="Capacity" modifier-color="red" opt-color="true" />
 <attr val="What would you like to upload?" />
 <attr val="Set Media Type Annotation" opt-push-button="true" opt-no-param="true" />
-<attr val="Number of process execution" />
+<attr val="Number of Process Execution per Year" />
 <attr val="Number of Simultaneous Users" />
-<group val="Response Time" modifier-color="green" opt-color="true" />
+<group val="Response Time" modifier-color="red" opt-color="true" />
 <attr val="Response Time Level" />
 <attr val="Set Response Time Level" opt-push-button="true" opt-no-param="true" />
 <aval val-support24_7="24/7 Support" />
 <chapter val="Support Service" />
-<group val="Support Service" />
+<group val="Support Service" modifier-color="red" opt-color="true" />
 <attr val="Support Service" val-enabled="((support24_7)=(&quot;false&quot;))" />
-<group val="Define Hours" />
+<group val="Define Hours" modifier-color="red" opt-color="true" />
 <attr val="Support Start Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
 <attr val="Support End Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
 <attr val="24/7 Support" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="true" val-unchecked-value="false" />
 <endgroup />
 <chapter val="Payment" />
-<group val="Payment" modifier-color="orange" opt-color="true" />
+<group val="Payment" modifier-color="red" opt-color="true" />
 <attr val="Payment Plan Annotation" />
 <attr val="Set Payment Plan" opt-push-button="true" opt-no-param="true" />
-<attr val="Payment Type" />
-<attr val="User Target" />
+<attr val="User Target Annotation" />
+<attr val="Set User Target" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 </leo>
 </value>
@@ -83775,9 +83814,9 @@
 <value>
 <leo><item val="Set Type of Encryption" />
 <setg val-n_AttrId="attrid" />
-<setg val-s_WSpath="bpaas:Encryption" />
+<setg val-s_WSpath="bpaas:EncryptionType" />
 <setg val-s_Annotation_AttrName="Type of Encryption Annotation" />
-<execute val-file="db:\setAnnotationAppSingle.asc" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
 </leo>
 </value>
 </facet>
@@ -83877,7 +83916,7 @@
 <setg val-n_AttrId="attrid" />
 <setg val-s_WSpath="bpaas:PaymentPlan" />
 <setg val-s_Annotation_AttrName="Offered Payment Plan Annotation" />
-<execute val-file="db:\setAnnotationAppSingle.asc" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
 </leo>
 </value>
 </facet>
@@ -83969,40 +84008,6 @@
 </facets>
 <value>00:000:00:00:00</value>
 </attribute>
-<attribute name="Offered Successful Request per Month in %" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
-<attribute name="Max Available Data Storage per Month" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
 <attribute name="Max Available Memory per Month" type="double">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -84054,23 +84059,6 @@
 </facets>
 <value>0</value>
 </attribute>
-<attribute name="Max Successful Data Restorations in %" type="double">
-<facets>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-<facet name="AttributeNumericDomain" type="string">
-<value></value>
-</facet>
-</facets>
-<value>0</value>
-</attribute>
 <attribute name="Max Responsiveness Time per Request" type="double">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -84105,23 +84093,6 @@
 </facets>
 <value>0</value>
 </attribute>
-<attribute name="Addressed User Target" type="enumlist">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>Not Specified@University@Industry</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value></value>
-</attribute>
 <attribute name="Accepted Payment" type="enumlist">
 <facets>
 <facet name="EnumerationDomain" type="string">
@@ -84152,23 +84123,6 @@
 </facet>
 </facets>
 <value>00:000:00:00:00</value>
-</attribute>
-<attribute name="Type of Backup" type="enumlist">
-<facets>
-<facet name="EnumerationDomain" type="string">
-<value>Incremental@Differential@Full</value>
-</facet>
-<facet name="MultiLineString" type="integer">
-<value>0</value>
-</facet>
-<facet name="AttributeHelpText" type="string">
-<value></value>
-</facet>
-<facet name="AttributeRegularExpression" type="string">
-<value></value>
-</facet>
-</facets>
-<value></value>
 </attribute>
 <attribute name="Support Days Coverage" type="enumlist">
 <facets>
@@ -84231,6 +84185,129 @@
 </facet>
 </facets>
 <value>false</value>
+</attribute>
+<attribute name="Max Restore Time in min" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Max Available Data Storage in GB per Month" type="double">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Set Addressed User Target" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set Addressed User Target" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="bpaas:TargetMarket" />
+<setg val-s_Annotation_AttrName="Offered User Target Annotation" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value>Set Addressed User Target</value>
+</attribute>
+<attribute name="Promised Retention Time in Years" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Promised Retention Time in Months" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Promised Retention Time in Weeks" type="integer">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+<facet name="AttributeNumericDomain" type="string">
+<value></value>
+</facet>
+</facets>
+<value>0</value>
+</attribute>
+<attribute name="Offered User Target Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
 </attribute>
 <attribute name="Position" type="string">
 <facets>
@@ -85434,6 +85511,44 @@
 </facets>
 <value></value>
 </attribute>
+<attribute name="Backup Frequency Annotation" type="string">
+<facets>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
+<attribute name="Set Backup Frequency" type="programcall">
+<facets>
+<facet name="EnumerationDomain" type="string">
+<value>
+<leo><item val="Set Backup Frequency" />
+<setg val-n_AttrId="attrid" />
+<setg val-s_WSpath="bpaas:BackupFrequency" />
+<setg val-s_Annotation_AttrName="Backup Frequency Annotation" />
+<execute val-file="db:\setAnnotationAppMultiSingle.asc" />
+</leo>
+</value>
+</facet>
+<facet name="MultiLineString" type="integer">
+<value>0</value>
+</facet>
+<facet name="AttributeHelpText" type="string">
+<value></value>
+</facet>
+<facet name="AttributeRegularExpression" type="string">
+<value></value>
+</facet>
+</facets>
+<value></value>
+</attribute>
 <classattribute name="ClassAbstract" type="integer">
 <facets>
 <facet name="MultiLineString" type="integer">
@@ -85540,57 +85655,57 @@
 <attr val="Set Object" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 <chapter val="Data Security Infrastructure" />
-<group val="Backup" />
-<attr val="Type of Backup" />
-<attr val="Max Successful Data Restorations in %" />
-<endgroup />
-<group val="Type of Encryption" />
+<group val="Type of Encryption" modifier-color="red" opt-color="true" />
 <attr val="Type of Encryption Annotation" />
 <attr val="Set Type of Encryption" opt-push-button="true" opt-no-param="true" />
 <endgroup />
-<group val="Data Location" />
+<aval val-retentionYears="Promised Retention Time in Years" />
+<aval val-retentionMonths="Promised Retention Time in Months" />
+<aval val-retentionWeeks="Promised Retention Time in Weeks" />
+<group val="Backup Management" modifier-color="red" opt-color="true" />
+<attr val="Promised Retention Time in Years" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
+<attr val="Promised Retention Time in Months" val-enabled="(((retentionYears)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
+<attr val="Promised Retention Time in Weeks" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionYears)=(&quot;0&quot;)))" />
+<attr val="Max Restore Time in min" />
+<endgroup />
+<group val="Backup Frequency" modifier-color="black" opt-color="true" />
+<attr val="Backup Frequency Annotation" />
+<attr val="Set Backup Frequency" opt-push-button="true" opt-no-param="true" />
+<endgroup />
+<group val="Data Location" modifier-color="red" opt-color="true" />
 <attr val="Data Storage Location Annotation" />
 <attr val="Set Data Storage Location" opt-push-button="true" opt-no-param="true" />
 <attr val="Data Processing Location Annotation" />
 <attr val="Set Data Processing Location" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 <chapter val="Perfomance" />
-<group val="Availability" />
+<group val="Availability" modifier-color="red" opt-color="true" />
 <attr val="Availability in %" />
-<attr val="Offered Successful Request per Month in %" />
 <endgroup />
-<group val="Capacity" />
-<attr val="Max Available Data Storage per Month" />
-<attr val="Max Available Memory per Month" />
-<attr val="Max Available No of CPU cores per Month" />
+<group val="Capacity" modifier-color="red" opt-color="true" />
+<attr val="Max Available Data Storage in GB per Month" />
 <attr val="Maximum Simultaneous Connections" />
 <attr val="Maximum Simultaneous Service Users" />
 <endgroup />
-<group val="Response Time" />
+<group val="Response Time" modifier-color="red" opt-color="true" />
 <attr val="Max Average Response Time" />
 <endgroup />
 <aval val-support24_7="24/7 Support" />
 <chapter val="Support Service" />
-<group val="Days" />
+<group val="Days" modifier-color="red" opt-color="true" />
 <attr val="Support Days Coverage" val-enabled="((support24_7)=(&quot;false&quot;))" />
 <endgroup />
-<group val="Time" />
+<group val="Time" modifier-color="red" opt-color="true" />
 <attr val="Support Start Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
 <attr val="Support End Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
 <attr val="24/7 Support" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="true" val-unchecked-value="false" />
 <endgroup />
-<chapter val="Service Support" />
-<group val="Support" />
-<attr val="Max Responsiveness Time per Request" />
-<attr val="Max Resolution Time per Request" />
-<attr val="Max Support Hours per Month" />
-<endgroup />
 <chapter val="Payment" />
-<group val="Offered Payment" />
+<group val="Offered Payment" modifier-color="red" opt-color="true" />
 <attr val="Offered Payment Plan Annotation" />
 <attr val="Set Offered Payment Plan" opt-push-button="true" opt-no-param="true" />
-<attr val="Addressed User Target" />
-<attr val="Accepted Payment" />
+<attr val="Offered User Target Annotation" />
+<attr val="Set Addressed User Target" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 </leo>
 </value>
