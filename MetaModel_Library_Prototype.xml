@@ -1,4 +1,4 @@
-<?xml version="1.1" encoding="UTF-8"?><library language="en" name="Cloudsocket_Prototype Library v1.3">
+<?xml version="1.1" encoding="UTF-8"?><library language="en" name="MT FHNW Library">
 <attributes>
 <attribute name="Version number" type="longstring" libtype="bp">
 <facets>
@@ -26,7 +26,7 @@
 <value></value>
 </facet>
 </facets>
-<value>30.06.2016, 12:34</value>
+<value>19.07.2016, 17:03</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="bp">
 <facets>
@@ -1492,7 +1492,7 @@
 <value></value>
 </facet>
 </facets>
-<value>30.06.2016, 08:54</value>
+<value>19.07.2016, 16:52</value>
 </attribute>
 <attribute name="Last user" type="longstring" libtype="we">
 <facets>
@@ -20245,7 +20245,7 @@
 <value></value>
 </facet>
 </facets>
-<value>C:\Users\LAMMEL~1\AppData\Local\Temp\adob444f1e9-3ade-41b1-8727-256fd822a5a8</value>
+<value>C:\Users\olga\AppData\Local\Temp\adof7065e8a-34af-4dd9-b526-5f25a6d5762b</value>
 </classattribute>
 <classattribute name="Model tree" type="enum">
 <facets>
@@ -83648,9 +83648,8 @@
 </facets>
 <value>
 <leo><notebook />
-<chapter val="Description" />
+<chapter val="Functional Req" />
 <attr val="Name" />
-<chapter val="Functional" />
 <group val="APQC" />
 <attr val="APQC Annotation" />
 <attr val="Set APQC" opt-push-button="true" opt-no-param="true" />
@@ -83662,54 +83661,6 @@
 <group val="Object" />
 <attr val="Object Annotation" />
 <attr val="Set Object" opt-push-button="true" opt-no-param="true" />
-<endgroup />
-<chapter val="Data Security" />
-<group val="Data Encryption" modifier-color="red" opt-color="true" />
-<attr val="Data Encryption Annotation" />
-<attr val="Set Data Encryption Level" opt-push-button="true" opt-no-param="true" />
-<endgroup />
-<aval val-retentionYears="Retention Time in Years" />
-<aval val-retentionMonths="Retention Time in Months" />
-<aval val-retentionWeeks="Retention Time in Weeks" />
-<group val="Backup Management" modifier-color="red" opt-color="true" />
-<attr val="Retention Time in Years" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
-<attr val="Retention Time in Months" val-enabled="(((retentionYears)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
-<attr val="Retention Time in Weeks" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionYears)=(&quot;0&quot;)))" />
-<endgroup />
-<group val="Backup Frequency" modifier-color="black" opt-color="true" />
-<attr val="Backup Frequency Annotation" />
-<attr val="Set Backup Frequency" opt-push-button="true" opt-no-param="true" />
-<endgroup />
-<group val="Data Location" modifier-color="red" opt-color="true" />
-<attr val="Data Location Annotation" />
-<attr val="Set Data Location" opt-push-button="true" opt-no-param="true" />
-<endgroup />
-<chapter val="Performance" />
-<group val="Availability" modifier-color="red" opt-color="true" />
-<attr val="Downtime in min/month" />
-<group val="Capacity" modifier-color="red" opt-color="true" />
-<attr val="What would you like to upload?" />
-<attr val="Set Media Type Annotation" opt-push-button="true" opt-no-param="true" />
-<attr val="Number of Process Execution per Year" />
-<attr val="Number of Simultaneous Users" />
-<group val="Response Time" modifier-color="red" opt-color="true" />
-<attr val="Response Time Level" />
-<attr val="Set Response Time Level" opt-push-button="true" opt-no-param="true" />
-<aval val-support24_7="24/7 Support" />
-<chapter val="Support Service" />
-<group val="Support Service" modifier-color="red" opt-color="true" />
-<attr val="Support Service" val-enabled="((support24_7)=(&quot;false&quot;))" />
-<group val="Define Hours" modifier-color="red" opt-color="true" />
-<attr val="Support Start Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
-<attr val="Support End Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
-<attr val="24/7 Support" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="true" val-unchecked-value="false" />
-<endgroup />
-<chapter val="Payment" />
-<group val="Payment" modifier-color="red" opt-color="true" />
-<attr val="Payment Plan Annotation" />
-<attr val="Set Payment Plan" opt-push-button="true" opt-no-param="true" />
-<attr val="User Target Annotation" />
-<attr val="Set User Target" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 </leo>
 </value>
@@ -85713,9 +85664,8 @@
 </facets>
 <value>
 <leo><notebook />
-<chapter val="Description" />
+<chapter val="Functional Req." />
 <attr val="Name" />
-<chapter val="Functional" />
 <group val="APQC" />
 <attr val="APQC Annotation" />
 <attr val="Set APQC" opt-push-button="true" opt-no-param="true" />
@@ -85727,58 +85677,6 @@
 <group val="Object" />
 <attr val="Object Annotation" />
 <attr val="Set Object" opt-push-button="true" opt-no-param="true" />
-<endgroup />
-<chapter val="Data Security Infrastructure" />
-<group val="Type of Encryption" modifier-color="red" opt-color="true" />
-<attr val="Type of Encryption Annotation" />
-<attr val="Set Type of Encryption" opt-push-button="true" opt-no-param="true" />
-<endgroup />
-<aval val-retentionYears="Retention Time in Years" />
-<aval val-retentionMonths="Retention Time in Months" />
-<aval val-retentionWeeks="Retention Time in Weeks" />
-<group val="Backup Management" modifier-color="red" opt-color="true" />
-<attr val="Retention Time in Years" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
-<attr val="Retention Time in Months" val-enabled="(((retentionYears)=(&quot;0&quot;))AND((retentionWeeks)=(&quot;0&quot;)))" />
-<attr val="Retention Time in Weeks" val-enabled="(((retentionMonths)=(&quot;0&quot;))AND((retentionYears)=(&quot;0&quot;)))" />
-<endgroup />
-<group val="Backup Frequency" modifier-color="black" opt-color="true" />
-<attr val="Backup Frequency Annotation" />
-<attr val="Set Backup Frequency" opt-push-button="true" opt-no-param="true" />
-<endgroup />
-<group val="Data Location" modifier-color="red" opt-color="true" />
-<attr val="Data Storage Location Annotation" />
-<attr val="Set Data Storage Location" opt-push-button="true" opt-no-param="true" />
-<attr val="Data Processing Location Annotation" />
-<attr val="Set Data Processing Location" opt-push-button="true" opt-no-param="true" />
-<endgroup />
-<chapter val="Perfomance" />
-<group val="Availability" modifier-color="red" opt-color="true" />
-<attr val="Availability in %" />
-<endgroup />
-<group val="Capacity" modifier-color="red" opt-color="true" />
-<attr val="Max Available Data Storage in GB per Month" />
-<attr val="Maximum Simultaneous Connections" />
-<attr val="Maximum Simultaneous Service Users" />
-<endgroup />
-<group val="Response Time" modifier-color="red" opt-color="true" />
-<attr val="Max Average Response Time" />
-<endgroup />
-<aval val-support24_7="24/7 Support" />
-<chapter val="Support Service" />
-<group val="Days" modifier-color="red" opt-color="true" />
-<attr val="Support Days Coverage" val-enabled="((support24_7)=(&quot;false&quot;))" />
-<endgroup />
-<group val="Time" modifier-color="red" opt-color="true" />
-<attr val="Support Start Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
-<attr val="Support End Hour" val-enabled="((support24_7)=(&quot;false&quot;))" />
-<attr val="24/7 Support" modifier-ctrltype="check" opt-ctrltype="true" val-checked-value="true" val-unchecked-value="false" />
-<endgroup />
-<chapter val="Payment" />
-<group val="Offered Payment" modifier-color="red" opt-color="true" />
-<attr val="Offered Payment Plan Annotation" />
-<attr val="Set Offered Payment Plan" opt-push-button="true" opt-no-param="true" />
-<attr val="Offered User Target Annotation" />
-<attr val="Set Addressed User Target" opt-push-button="true" opt-no-param="true" />
 <endgroup />
 </leo>
 </value>
